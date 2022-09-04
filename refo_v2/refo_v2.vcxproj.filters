@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="protect\antidump.h" />
+    <ClInclude Include="misc\lazy.h" />
+    <ClInclude Include="protect\anti_debugger.h" />
+    <ClInclude Include="encryption\xor.h" />
+    <ClInclude Include="utils\print\print.h" />
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="skStr.h" />
+    <ClInclude Include="mapper\intel_driver.hpp" />
+    <ClInclude Include="mapper\intel_driver_resource.hpp" />
+    <ClInclude Include="mapper\kdmapper.hpp" />
+    <ClInclude Include="mapper\nt.hpp" />
+    <ClInclude Include="mapper\portable_executable.hpp" />
+    <ClInclude Include="mapper\service.hpp" />
+    <ClInclude Include="mapper\utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="protect\protectmain.cpp" />
+    <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="utils\print\print.cpp" />
+    <ClCompile Include="mapper\intel_driver.cpp" />
+    <ClCompile Include="mapper\kdmapper.cpp" />
+    <ClCompile Include="mapper\portable_executable.cpp" />
+    <ClCompile Include="mapper\service.cpp" />
+    <ClCompile Include="mapper\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+</Project>
